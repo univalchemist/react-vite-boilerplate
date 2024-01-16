@@ -1,0 +1,33 @@
+# _workflows/storybook-deployment.yml
+name: 'Push to Chromatic'
+
+on:
+  pull_request:
+    branches:
+      - develop
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install dependencies
+        run: yarn
+      #👇 Adds Chromatic as a step in the workflow
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        id: chromaticbuild
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: chpt_e486ce05a55b167

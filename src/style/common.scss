@@ -1,0 +1,72 @@
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 0.125rem;
+    height: 0.125rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--gray-300);
+    border-radius: 0.1875rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+body {
+  &.scroll-lock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding-right: 17px;
+  }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+span.spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+  font-weight: normal;
+  color: var(--primary-600);
+
+  &.ic-loading {
+    &:before {
+      -webkit-animation: spinning 0.9s infinite linear;
+      animation: spinning 0.9s infinite linear;
+    }
+  }
+}
+
+.ic-eye,
+.ic-eye-off {
+  cursor: pointer;
+}
+
+.form-fields {
+  label {
+    span.checkbox,
+    span.radio {
+      border: none;
+      padding: 0;
+      box-shadow: none !important;
+    }
+    span.warning {
+      display: block;
+      padding-top: 6px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.43;
+      color: var(--error-600);
+    }
+  }
+}
+
+

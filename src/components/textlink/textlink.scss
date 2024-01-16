@@ -1,0 +1,16 @@
+.text-link {
+  color: var(--primary-700);
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--primary-500);
+    text-decoration: underline;
+  }
+
+}

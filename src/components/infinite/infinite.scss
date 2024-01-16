@@ -1,0 +1,27 @@
+.observer {
+  position: relative;
+  width: 100%;
+  min-height: max-content;
+  padding-top: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+
+  &.loading {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .loading-container {
+    position: relative;
+    min-height: max-content;
+
+    span.spinner {
+      font-size: 20px;
+    }
+  }
+}

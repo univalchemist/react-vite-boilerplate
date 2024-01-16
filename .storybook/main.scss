@@ -1,0 +1,46 @@
+.sb-show-main {
+  width: 100vw;
+  height: 100vh;
+
+  #storybook-root:not([hidden=true]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .icons-list {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .icon-item {
+      cursor: default;
+      box-shadow: 0 4px 10px 0 rgba(110, 124, 135, 0.12);
+      padding: 12px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      transition: background-color 0.2s linear;
+      -webkit-transition: background-color 0.2s linear;
+      -moz-transition: background-color 0.2s linear;
+      -ms-transition: background-color 0.2s linear;
+      -o-transition: background-color 0.2s linear;
+  
+      &:hover {
+        background-color: #9E77ED;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

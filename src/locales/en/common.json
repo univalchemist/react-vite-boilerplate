@@ -1,0 +1,23 @@
+{
+  "boulder": "Boulder",
+  "currency": "{{value, currency(USD), number(minimumFractionDigits: 2, maximumFractionDigits: 2)}}{{additional}}",
+  "email": "Email",
+  "password": "Password",
+  "signIn": "Sign in",
+  "back": "back",
+  "justNow": "Just Now",
+  "invalidEmail": "Invalid Email",
+  "emailRequired": "Email is required",
+  "passwordRequired": "Password is required",
+  "invalidPassword": "Invalid password",
+  "notFoundTitle": "Page Not Found",
+  "notFoundDesc": "Page Not Found",
+  "goToHomePage": "Please go to home page",
+  "loginToYourAccount": "Log in to your account",
+  "welcomeBackEnterDetails": "Welcome back! Please enter your details.",
+  "incorrectEmailOrPassword": "Incorrect email or password.",
+  "rememberMyLogin": "Remember my login",
+  "itemsPerPage": "{{value}} per page",
+  "totalItems": "Total {{value}}",
+  "goto": "Goto"
+}
